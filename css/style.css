@@ -19,6 +19,7 @@ a {
     border: 1px solid black;
     margin-top: 2rem;
     text-align: center;
+    color: black;
 }
 
 a:hover{

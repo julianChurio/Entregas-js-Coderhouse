@@ -78,7 +78,6 @@ if (numeroIngresado == parseInt) {
 do {
     contrasenia = prompt("Escribir ESC para continuar");
 } while (contrasenia !== "ESC");
-
 if (contrasenia === "ESC") {
     alert("Podes pasar")
 } else {

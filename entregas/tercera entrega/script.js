@@ -1,3 +1,9 @@
+// agregar demon's souls, bloodborne
+// hacer que el texto del prompt cambie cuando ya hay algo en el carrito
+// en algun momento pensar como hacer para que se pueda quitar algo del carrito (array map con los prompts)
+// hacer un array de objetos con todos los juegos - nombre, precio y fecha de lanzamiento (consolas?)
+// hacer que se pueda ver que juego y cuanta cantidad estoy llevando en el carrito
+const arrayCarrito = [];
 let terminado = false;
 let nombreBien = false;
 let terminadoBien = false;
@@ -26,23 +32,29 @@ function saludarCliente() {
 function selccionDeJuegos() {
   do {
     juegosDisponibles = prompt(
-      "Que juego Soul le gustaría? \n 1: Dark Souls  \n 2: Dark Souls 2 \n 3: Dark Souls 3"
+      "Que juego Soul le gustaría? \n 1: Dark Souls  \n 2: Dark Souls 2 \n 3: Dark Souls 3 \n 4: Terminar compra"
     );
     if (juegosDisponibles == "1") {
       alert("Buena elección! El primer Dark Soul es llamado el mejor.");
-      terminado = true;
-      terminadoBien = true;
+      terminado = false;
+      terminadoBien = false;
+      arrayCarrito.push(precioDS1);
     } else if (juegosDisponibles == "2") {
       alert("Querés sufrir, no? Suerte en Majula!");
-      terminado = true;
-      terminadoBien = true;
+      terminado = false;
+      terminadoBien = false;
+      arrayCarrito.push(precioDS2);
     } else if (juegosDisponibles == "3") {
       alert("Excelente opción, es mi favorito personalmente.");
-      terminado = true;
-      terminadoBien = true;
+      terminado = false;
+      terminadoBien = false;
+      arrayCarrito.push(precioDS3);
     } else if (juegosDisponibles == null) {
       alert("Saliste de la compra.");
       terminado = true;
+    } else if (juegosDisponibles == 4) {
+      terminado = true;
+      terminadoBien = true;
     } else {
       alert("Debe ingresar un numero");
       terminado = false;
@@ -52,30 +64,12 @@ function selccionDeJuegos() {
 
 function finDeCompra() {
   do {
-    if (juegosDisponibles == "1") {
+    if (juegosDisponibles == "4") {
       alert(
-        "El precio de Dark Souls 1 es de ARS$" +
-          precioDS1 +
+        "El precio de los juegos en tu carrito es de ARS$" +
+          arrayCarrito.reduce((a, b) => a + b, 0) +
           " en efectivo, o ARS$" +
-          precioDS1 * 1.21 +
-          " con tarjeta."
-      );
-      decision = prompt("Quieres finalizar la compra? \n 1: Si \n 2: No");
-    } else if (juegosDisponibles == "2") {
-      alert(
-        "El precio de Dark Souls 2 es de ARS$" +
-          precioDS2 +
-          " en efectivo, o ARS$" +
-          precioDS2 * 1.21 +
-          " con tarjeta."
-      );
-      decision = prompt("Quieres finalizar la compra? \n 1: Si \n 2: No");
-    } else if (juegosDisponibles == "3") {
-      alert(
-        "El precio de Dark Souls 3 es de ARS$" +
-          precioDS3 +
-          " en efectivo, o ARS$" +
-          precioDS3 * 1.21 +
+          arrayCarrito.reduce((a, b) => a + b, 0) * 1.21 +
           " con tarjeta."
       );
       decision = prompt("Quieres finalizar la compra? \n 1: Si \n 2: No");
@@ -99,9 +93,9 @@ function finDeCompra() {
   } while (!terminado);
 }
 saludarCliente();
-if(nombreBien == true) {
-    selccionDeJuegos();
+if (nombreBien == true) {
+  selccionDeJuegos();
 }
 if (terminadoBien == true) {
-    finDeCompra();
+  finDeCompra();
 }

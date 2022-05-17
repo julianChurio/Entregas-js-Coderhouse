@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin:0;
+    height:100%;
+  }
+
+.bodySegundaEntrega {
+    background-image: radial-gradient(#D37150, #D37150, black, black);
+}

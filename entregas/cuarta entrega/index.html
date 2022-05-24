@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <main id="main">
+        <div id="imagenes">
+            <img src="images/darksouls.jpg" alt="dark souls" class="primeraImagen">
+            <img src="images/darksouls2sotfs.jpg" alt="dark souls 2" class="segundaImagen">
+            <img src="images/darksouls3.jpg" alt="dark souls 3" class="terceraImagen">
+        </div>
+        <div id="botones">
+            <button onclick="mostrarValoresDS1()" class="primerBoton" id="primerButton">boton</button>
+            <button onclick="mostrarValoresDS2()" class="segundoBoton" id="segundoButton">boton</button>
+            <button onclick="mostrarValoresDS3()" class="tercerBoton" id="tercerButton">boton</button>
+        </div>
+        <div id="textos">
+            <h2 id="primerTexto" class="primerTexto hidden">Dark Souls</h2>
+            <h2 id="segundoTexto" class="segundoTexto hidden">Dark Souls 2</h2>
+            <h2 id="tercerTexto" class="tercerTexto hidden">Dark Souls 3</h2>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

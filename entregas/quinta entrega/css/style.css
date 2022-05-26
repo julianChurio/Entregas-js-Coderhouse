@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, black, black, #d37150);
+  color: whitesmoke;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#precioCarrito {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.botonRestarGeneral {
+  background-color: #ff000098;
+  border-color: #ff000098;
+  cursor: pointer;
+}
+
+.botonSumarGeneral {
+  background-color: #6FA821;
+  border-color: #6FA821;
+  cursor: pointer;
+}
+
+.botonTotal {
+  width: 25%;
+  border: 0px;
+  background-color: whitesmoke;
+}
+
+#imagenes {
+  display: grid;
+  grid-template-areas: "primeraImagen segundaImagen terceraImagen cuartaFoto quintaFoto";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+#botones {
+  display: grid;
+  grid-template-areas: "primerBoton segundoBoton tercerBoton cuartoBoton quintoBoton";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+#primerBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS1 botonNombreDS1 botonSumarDS1";
+}
+
+#segundoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS2 botonNombreDS2 botonSumarDS2";
+}
+
+#tercerBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS3 botonNombreDS3 botonSumarDS3";
+}
+
+#cuartoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS botonNombreDS botonSumarDS";
+}
+
+#quintoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarBB botonNombreBB botonSumarBB";
+}
+
+#textos {
+  display: grid;
+  grid-template-areas: "primerTexto segundoTexto tercerTexto cuartoTexto quintoTexto";
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagenes */
+
+.primeraImagen {
+  grid-template-areas: primeraImagen;
+}
+
+.segundaImagen {
+  grid-template-areas: segundaImagen;
+}
+
+.terceraImagen {
+  grid-template-areas: terceraImagen;
+}
+
+.cuartaFoto {
+  grid-template-areas: cuartaFoto;
+}
+
+.quintaFoto {
+  grid-template-areas: quintaFoto;
+}
+
+/* Botones */
+
+/* Dark souls 1 */
+
+.primerBoton {
+  grid-template-areas: primerBoton;
+}
+
+.botonRestarDS1 {
+  grid-template-areas: botonRestarDS1;
+}
+
+.botonSumarDS1 {
+  grid-template-areas: botonSumarDS1;
+}
+
+.botonNombreDS1 {
+  grid-template-areas: botonNombreDS1;
+}
+
+/* Dark souls 2 */
+
+.segundoBoton {
+  grid-template-areas: segundoBoton;
+}
+
+.botonRestarDS2 {
+  grid-template-areas: botonRestarDS2;
+}
+
+.botonNombreDS2 {
+  grid-template-areas: botonNombreDS2;
+}
+
+.botonSumarDS2 {
+  grid-template-areas: botonSumarDS2;
+}
+
+/* Dark souls 3 */
+
+.tercerBoton {
+  grid-template-areas: tercerBoton;
+}
+
+.botonRestarDS3 {
+  grid-template-areas: botonRestarDS3;
+}
+
+.botonNombreDS3 {
+  grid-template-areas: botonNombreDS3;
+}
+
+.botonSumarDS3 {
+  grid-template-areas: botonSumarDS3;
+}
+
+/* Demon's souls */
+
+.cuartoBoton {
+  grid-template-areas: cuartoBoton;
+}
+
+.botonRestarDS {
+  grid-template-areas: botonRestarDS;
+}
+
+.botonNombreDS {
+  grid-template-areas: botonNombreDS;
+}
+
+.botonSumarDS {
+  grid-template-areas: botonSumarDs;
+}
+
+/* Bloodborne */
+
+.quintoBoton {
+  grid-template-areas: quintoBoton;
+}
+
+.botonRestarBB {
+  grid-template-areas: botonRestarBB;
+}
+
+.botonNombreBB {
+  grid-template-areas: botonNombreBB;
+}
+
+.botonSumarBB {
+  grid-template-areas: botonSumarBB;
+}
+
+/* Textos */
+
+.primerTexto {
+  grid-template-areas: primerTexto;
+}
+
+.segundoTexto {
+  grid-template-areas: segundoTexto;
+}
+
+.tercerTexto {
+  grid-template-areas: tercerTexto;
+}
+
+.cuartoTexto {
+  grid-template-areas: cuartoTexto;
+}
+
+.quintoTexto {
+  grid-template-areas: quintoTexto;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido!</h1>
+    </header>
+    <main id="main">
+        <div id="imagenes">
+            <img src="images/demonssoulswallpaper.jpg" alt="demon's souls" class="primeraImagen">
+            <img src="images/darksouls.jpg" alt="dark souls" class="segundaImagen">
+            <img src="images/darksouls2sotfs.jpg" alt="dark souls 2" class="terceraImagen">
+            <img src="images/darksouls3.jpg" alt="dark souls 3" class="cuartaFoto">
+            <img src="images/bloodborne.jpg" alt="Bloodborne" class="quintaFoto">
+        </div>
+        <div id="botones">
+            <div id="primerBoton">
+                <button onclick="restarDS()" class="botonRestarDS botonRestarGeneral">-</button>
+                <button onclick="mostrarValoresDS()" class="botonNombreDS" id="primerButton">Nombre</button>
+                <button onclick="sumarDS()" class="botonSumarDS botonSumarGeneral">+</button>
+            </div>
+            <div id="segundoBoton">
+                <button onclick="restarDS1()" class="botonRestarDS1 botonRestarGeneral">-</button>
+                <button onclick="mostrarValoresDS1()" class="botonNombreDS1" id="segundoButton">Nombre</button>
+                <button onclick="sumarDS1()" class="botonSumarDS1 botonSumarGeneral">+</button>
+            </div>
+            <div id="tercerBoton">
+                <button onclick="restarDS2()" class="botonRestarDS2 botonRestarGeneral">-</button>
+                <button onclick="mostrarValoresDS2()" class="botonNombreDS2" id="tercerButton">Nombre</button>
+                <button onclick="sumarDS2()" class="botonSumarDS2 botonSumarGeneral">+</button>
+            </div>
+            <div id="cuartoBoton">
+                <button onclick="restarDS3()" class="botonRestarDS3 botonRestarGeneral">-</button>
+                <button onclick="mostrarValoresDS3()" class="botonNombreDS3" id="cuartoButton">Nombre</button>
+                <button onclick="sumarDS3()" class="botonSumarDS3 botonSumarGeneral">+</button>
+            </div>
+            <div id="quintoBoton">
+                <button onclick="restarBB()" class="botonRestarBB botonRestarGeneral">-</button>
+                <button onclick="mostrarValoresBB()" class="botonNombreBB" id="quintoButton">Nombre</button>
+                <button onclick="sumarBB()" class="botonSumarBB botonSumarGeneral">+</button>
+            </div>
+        </div>
+        <div id="textos">
+            <div id="primerTexto" class="primerTexto hidden">
+                <h2>Demon's Souls</h2>
+                <p>Precio: ARS$11999</p>
+            </div>
+            <div id="segundoTexto" class="segundoTexto hidden">
+                <h2>Dark Souls</h2>
+                <p>Precio: ARS$1199</p>
+            </div>
+            <div id="tercerTexto" class="tercerTexto hidden">
+                <h2>Dark Souls 2</h2>
+                <p>Precio: ARS$1999</p>
+            </div>
+            <div id="cuartoTexto" class="cuartoTexto hidden">
+                <h2>Dark Souls 3</h2>
+                <p>Precio: ARS$2999</p>
+            </div>
+            <div id="quintoTexto" class="quintoTexto hidden">
+                <h2>Bloodborne</h2>
+                <p>Precio: ARS$3299</p>
+            </div>
+        </div>
+        <h2 id="precioCarrito"></h2>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

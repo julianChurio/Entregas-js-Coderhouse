@@ -1,6 +1,10 @@
 // Login simple
 
-if (localStorage.getItem("nombreUsuario") == null) {
+if (
+  localStorage.getItem("nombreUsuario") == "" ||
+  localStorage.getItem("nombreUsuario") == null
+) {
+  console.log("Ingrese un nombre");
   document.getElementById("titular").className = "hiddenDos";
   document.getElementById("main").className = "hiddenDos";
   document.getElementById("cambiarNombre").className = "hiddenDos";

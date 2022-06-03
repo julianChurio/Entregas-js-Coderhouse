@@ -70,14 +70,12 @@ let restarDS = () => {
   } else {
     arrayCarrito.splice(sacar, 1);
   }
-  carritoGuardado();
   calcularPrecios();
 };
 
 let sumarDS = () => {
   arrayCarrito.push(juegosSouls[0].precio);
   arrayCarrito.sort((a, b) => a - b);
-  carritoGuardado();
   calcularPrecios();
 };
 
@@ -96,7 +94,6 @@ let restarDS1 = () => {
   } else {
     arrayCarrito.splice(sacar, 1);
   }
-  carritoGuardado();
   calcularPrecios();
 };
 
@@ -109,7 +106,6 @@ function mostrarValoresDS1() {
 let sumarDS1 = () => {
   arrayCarrito.push(juegosSouls[1].precio);
   arrayCarrito.sort((a, b) => a - b);
-  carritoGuardado();
   calcularPrecios();
 };
 
